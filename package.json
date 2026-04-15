@@ -1,0 +1,15 @@
+{
+  "name": "@rbtbuilds/shannon-pentest",
+  "version": "1.0.0",
+  "description": "AI-powered penetration testing skill for Claude Code. White-box security analysis + live exploitation.",
+  "bin": {
+    "shannon-pentest": "./install.mjs"
+  },
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rbtbuilds/shannon-pentest-skill.git"
+  },
+  "keywords": ["claude-code", "pentest", "security", "vulnerability", "ai"]
+}
