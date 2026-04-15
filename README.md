@@ -86,10 +86,10 @@ Generates a comprehensive security assessment report with:
 
 ## Output
 
-All findings are saved to `<repo>/.shannon/deliverables/`:
+All findings are saved to `<repo>/.sentinel/deliverables/`:
 
 ```
-.shannon/deliverables/
+.sentinel/deliverables/
   pre_recon_deliverable.md
   auth_analysis_deliverable.md
   authz_analysis_deliverable.md

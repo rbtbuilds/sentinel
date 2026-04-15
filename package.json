@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "AI-powered penetration testing skill for Claude Code. White-box security analysis + live exploitation.",
   "bin": {
-    "shannon-pentest": "./install.mjs"
+    "sentinel": "./install.mjs"
   },
   "type": "module",
   "license": "MIT",
