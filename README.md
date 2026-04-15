@@ -1,20 +1,27 @@
 # Sentinel
 
-AI-powered penetration testing as a Claude Code slash command. Runs a full white-box security assessment with live exploitation — no Docker, no infrastructure, no API keys beyond your Claude Code session.
+AI-powered penetration testing as a Claude Code plugin. Runs a full white-box security assessment with live exploitation — no Docker, no infrastructure, no API keys beyond your Claude Code session.
 
 ## Install
 
-```bash
-npx github:rbtbuilds/sentinel
+### Claude Code Marketplace (Recommended)
+
+```
+/install-plugin github:rbtbuilds/sentinel
 ```
 
-This installs the `/pentest` command into your project's `.claude/commands/` directory.
+### Manual Install
 
-Or manually:
 ```bash
-git clone https://github.com/rbtbuilds/sentinel.git
-cd sentinel
-node install.mjs
+git clone https://github.com/rbtbuilds/sentinel.git ~/.claude/plugins/sentinel
+```
+
+Then enable it in Claude Code settings.
+
+### npx (Legacy — copies command to project)
+
+```bash
+npx github:rbtbuilds/sentinel
 ```
 
 ## Usage
@@ -52,7 +59,7 @@ Options:
 
 ## What It Does
 
-The skill runs a 4-phase security assessment:
+The plugin runs a 4-phase security assessment:
 
 ### Phase 1: Pre-Recon
 Three parallel agents map your codebase:
@@ -103,17 +110,17 @@ All findings are saved to `<repo>/.sentinel/deliverables/`:
 
 ## How It Works
 
-Unlike traditional pentest tools that require Docker, Temporal, or separate API keys, this skill runs entirely inside your Claude Code session. It uses Claude Code's `Agent` tool to dispatch parallel subagents for each analysis phase — same parallelism as a full pipeline, fraction of the cost.
+Unlike traditional pentest tools that require Docker, Temporal, or separate API keys, this plugin runs entirely inside your Claude Code session. It uses Claude Code's `Agent` tool to dispatch parallel subagents for each analysis phase — same parallelism as a full pipeline, fraction of the cost.
 
 | | Traditional Tools | Sentinel |
 |---|---|---|
 | Infrastructure | Docker + orchestrator | None |
 | Cost | $20-50+ per scan | Your CC session |
-| Setup | API keys, builds, config | `npx` install |
+| Setup | API keys, builds, config | Plugin install |
 | Parallelism | 5 concurrent agents | 5 concurrent agents |
 | Methodology | Same | Same |
 
-## Scope & Safety
+## Scope and Safety
 
 - **External attacker perspective only** — no internal network access
 - **No destructive actions** — no DoS, no data deletion, no data modification

@@ -1,0 +1,12 @@
+{
+  "name": "sentinel",
+  "version": "1.0.0",
+  "description": "AI-powered penetration testing. White-box security analysis with live exploitation — no Docker, no infrastructure.",
+  "author": {
+    "name": "rbtbuilds",
+    "url": "https://github.com/rbtbuilds"
+  },
+  "repository": "https://github.com/rbtbuilds/sentinel",
+  "license": "MIT",
+  "keywords": ["security", "pentest", "vulnerability", "audit", "exploitation"]
+}
