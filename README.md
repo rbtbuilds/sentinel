@@ -5,10 +5,17 @@ AI-powered penetration testing as a Claude Code slash command. Runs a full white
 ## Install
 
 ```bash
-npx @rbtbuilds/shannon-pentest
+npx github:rbtbuilds/shannon-pentest-skill
 ```
 
 This installs the `/pentest` command into your project's `.claude/commands/` directory.
+
+Or manually:
+```bash
+git clone https://github.com/rbtbuilds/shannon-pentest-skill.git
+cd shannon-pentest-skill
+node install.mjs
+```
 
 ## Usage
 
