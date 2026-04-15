@@ -6,8 +6,12 @@ AI-powered penetration testing as a Claude Code plugin. Runs a full white-box se
 
 ### Claude Code Marketplace (Recommended)
 
-```
-/install-plugin github:rbtbuilds/sentinel
+```bash
+# Add the marketplace (one-time)
+claude plugin marketplace add https://github.com/rbtbuilds/rbt-marketplace
+
+# Install Sentinel
+claude plugin install sentinel
 ```
 
 ### Manual Install
@@ -17,12 +21,6 @@ git clone https://github.com/rbtbuilds/sentinel.git ~/.claude/plugins/sentinel
 ```
 
 Then enable it in Claude Code settings.
-
-### npx (Legacy — copies command to project)
-
-```bash
-npx github:rbtbuilds/sentinel
-```
 
 ## Usage
 
@@ -116,7 +114,7 @@ Unlike traditional pentest tools that require Docker, Temporal, or separate API 
 |---|---|---|
 | Infrastructure | Docker + orchestrator | None |
 | Cost | $20-50+ per scan | Your CC session |
-| Setup | API keys, builds, config | Plugin install |
+| Setup | API keys, builds, config | 2 commands |
 | Parallelism | 5 concurrent agents | 5 concurrent agents |
 | Methodology | Same | Same |
 
