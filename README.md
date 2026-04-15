@@ -1,19 +1,19 @@
-# Shannon Pentest Skill
+# Sentinel
 
 AI-powered penetration testing as a Claude Code slash command. Runs a full white-box security assessment with live exploitation — no Docker, no infrastructure, no API keys beyond your Claude Code session.
 
 ## Install
 
 ```bash
-npx github:rbtbuilds/shannon-pentest-skill
+npx github:rbtbuilds/sentinel
 ```
 
 This installs the `/pentest` command into your project's `.claude/commands/` directory.
 
 Or manually:
 ```bash
-git clone https://github.com/rbtbuilds/shannon-pentest-skill.git
-cd shannon-pentest-skill
+git clone https://github.com/rbtbuilds/sentinel.git
+cd sentinel
 node install.mjs
 ```
 
@@ -105,7 +105,7 @@ All findings are saved to `<repo>/.shannon/deliverables/`:
 
 Unlike traditional pentest tools that require Docker, Temporal, or separate API keys, this skill runs entirely inside your Claude Code session. It uses Claude Code's `Agent` tool to dispatch parallel subagents for each analysis phase — same parallelism as a full pipeline, fraction of the cost.
 
-| | Traditional Tools | Shannon Skill |
+| | Traditional Tools | Sentinel |
 |---|---|---|
 | Infrastructure | Docker + orchestrator | None |
 | Cost | $20-50+ per scan | Your CC session |

@@ -1,5 +1,5 @@
 {
-  "name": "@rbtbuilds/shannon-pentest",
+  "name": "@rbtbuilds/sentinel",
   "version": "1.0.0",
   "description": "AI-powered penetration testing skill for Claude Code. White-box security analysis + live exploitation.",
   "bin": {
@@ -9,7 +9,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rbtbuilds/shannon-pentest-skill.git"
+    "url": "https://github.com/rbtbuilds/sentinel.git"
   },
   "keywords": ["claude-code", "pentest", "security", "vulnerability", "ai"]
 }

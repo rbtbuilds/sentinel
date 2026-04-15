@@ -10,7 +10,7 @@ const targetDir = join(process.cwd(), '.claude', 'commands');
 const skillSource = join(__dirname, 'pentest.md');
 const skillDest = join(targetDir, 'pentest.md');
 
-console.log('\n  Shannon Pentest Skill Installer\n');
+console.log('\n  Sentinel Installer\n');
 
 if (existsSync(skillDest)) {
   console.log('  [!] /pentest command already exists at:');
